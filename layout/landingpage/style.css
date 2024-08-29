@@ -54,6 +54,27 @@ a {
 .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
+/* Titles */
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem; /*jarak antar karakter*/
+  color: grey;
+  position: relative;
+  padding-left: 40px;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.pre-title::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: white;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
 /* logo dan nav menu */
 .nav {
   display: flex;
@@ -102,4 +123,31 @@ nav ul li a {
   height: 720px;
   display: grid;
   grid-template-columns: 1fr 1fr; /*fr=fraction, 2 kolom sama lebar*/
+  align-items: center;
+}
+.hero-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem; /*atas, kiiri-kanan, bawah*/
+}
+.hero-name span {
+  color: goldenrod;
+}
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+.hero-right img {
+  width: 90%;
+}
+/* Services section */
+#services {
+  background-color: darkgoldenrod;
+  padding: 6rem 0; /*section padding*/
+}
+.services .pre-title {
+  margin: 0 auto; /*supaya ke tengah*/
+}
+.services-title {
+  text-align: center;
 }
