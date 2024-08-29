@@ -55,6 +55,10 @@ a {
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 /* Titles */
+.section-title {
+  margin: 1rem 0 4rem;
+  font-size: 2rem;
+}
 .pre-title {
   text-transform: uppercase;
   letter-spacing: 0.5rem; /*jarak antar karakter*/
@@ -74,6 +78,14 @@ a {
   position: absolute;
   left: 0;
   top: 50%;
+}
+/* Layout */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /*bagian responsive, repeat kondisi dalam kurung: autofit=supaya kolomnya nge expand ketika ada ruang kosong di sisinya, minimal 250px kolom gridnya akan turun ke bawah, gap untuk 1fr 3rem*/
 }
 /* logo dan nav menu */
 .nav {
@@ -142,7 +154,7 @@ nav ul li a {
 }
 /* Services section */
 #services {
-  background-color: darkgoldenrod;
+  background-color: rgb(17, 16, 16);
   padding: 6rem 0; /*section padding*/
 }
 .services .pre-title {
@@ -150,4 +162,15 @@ nav ul li a {
 }
 .services-title {
   text-align: center;
+}
+.service {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: rgb(218, 165, 34);
+  border-radius: 0.7rem;
+}
+.service h4 {
+  margin: 1.5rem 0;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
