@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,4 +6,74 @@
 }
 body {
   font-family: "roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: white;
+}
+p {
+  font-size: 1rem; /*16px*/
+  line-height: 1, 8rem;
+}
+p,
+span,
+label,
+input,
+textarea,
+li {
+  color: grey;
+}
+a {
+  text-decoration: none; /*menghilangkan underline*/
+}
+.main-container {
+  width: 1200px;
+  margin: 0 auto; /*atas-bawah 0 kiri-kanan auto*/
+}
+/*rresponsive media query*/
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 90%;
+  }
+}
+/* button */
+.btn {
+  padding: 1rem 1.8rem;
+  background: wheat;
+  border: 1.5px;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+/* logo dan nav menu */
+.nav {
+  display: flex;
+  justify-content: space-between; /*auto menempatkan diri ke kiri dan kanan*/
+  padding: 2rem 0;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+.logo {
+  display: flex;
+  align-items: center; /*ke tengah sejajar navbar*/
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.logo a {
+  color: wheat;
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+nav ul li a {
+  color: white;
 }
