@@ -6,6 +6,7 @@
 }
 body {
   font-family: "roboto", sans-serif;
+  background-color: black;
 }
 h1,
 h2,
@@ -50,6 +51,9 @@ a {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
 /* logo dan nav menu */
 .nav {
   display: flex;
@@ -76,4 +80,26 @@ nav ul li {
 }
 nav ul li a {
   color: white;
+}
+/* hamburger menu */
+.burger {
+  /* display: none; */
+  z-index: 99;
+  position: fixed;
+  top: 33px;
+  right: 35px;
+}
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  margin: 7px;
+  transition: all 0.3s;
+  z-index: 99;
+}
+/* Section Hero */
+#hero {
+  height: 720px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /*fr=fraction, 2 kolom sama lebar*/
 }
