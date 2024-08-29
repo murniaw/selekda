@@ -179,6 +179,7 @@ nav ul li a {
 /* portfolio section */
 #portfolios {
   padding: 6rem 0;
+  background-color: black;
 }
 .portfolio {
   border-radius: 0.1rem;
@@ -206,4 +207,21 @@ nav ul li a {
 .portfolio h4 {
   font-weight: 500;
   font-size: 1.1rem;
+}
+.portfolio-title a svg {
+  fill: gold;
+  transition: 0.2s ease-in-out;
+}
+.portfolio-title a svg:hover {
+  fill: wheat;
+}
+.portfolio-tags {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.portfolio-tags div {
+  font-size: 0.8rem;
+  border: 1px solid grey;
+  padding: 0.4rem 0.6rem;
 }
