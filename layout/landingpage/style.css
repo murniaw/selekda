@@ -91,7 +91,7 @@ a {
 .nav {
   display: flex;
   justify-content: space-between; /*auto menempatkan diri ke kiri dan kanan*/
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 .nav ul {
   list-style: none;
@@ -168,6 +168,7 @@ nav ul li a {
   text-align: center;
   background: rgb(218, 165, 34);
   border-radius: 0.7rem;
+  margin: 0 1.5rem 1rem;
 }
 .service h4 {
   margin: 1.5rem 0;
@@ -175,3 +176,34 @@ nav ul li a {
   font-size: 1.1rem;
 }
 /* no service-icon */
+/* portfolio section */
+#portfolios {
+  padding: 6rem 0;
+}
+.portfolio {
+  border-radius: 0.1rem;
+  margin: 0 1.5rem 1rem;
+  overflow: hidden;
+  border: 1px solid rgb(17, 16, 16);
+}
+.portfolio-cover {
+  height: 250px;
+}
+.portfolio-cover img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /*menjaga rasio gambar asli*/
+}
+.portfolio-info {
+  padding: 2rem 1.5rem;
+}
+.portfolio-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.portfolio h4 {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
