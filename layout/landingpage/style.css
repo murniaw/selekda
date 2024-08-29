@@ -1,0 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*value dari border dan paddingg masuk ke dalam hitungan*/
+}
+body {
+  font-family: "roboto", sans-serif;
+}
